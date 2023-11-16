@@ -5,7 +5,7 @@
 	<!-- The Basics -->
 	<groupId>org.odftoolkit</groupId>
 	<artifactId>odfdom-java</artifactId>
-	<version>0.8.7</version>
+	<version>0.8.7-ATP</version>
 	<packaging>jar</packaging>
 	<parent>
 		<groupId>org.sonatype.oss</groupId>
@@ -129,7 +129,7 @@
 					<tagletArtifact>
 						<groupId>org.odftoolkit</groupId>
 						<artifactId>taglets</artifactId>
-						<version>0.8.7</version>
+						<version>0.8.7-ATP</version>
 					</tagletArtifact>
 				</configuration>
 			</plugin>
@@ -194,7 +194,7 @@
 					<tagletArtifact>
 						<groupId>org.odftoolkit</groupId>
 						<artifactId>taglets</artifactId>
-						<version>0.8.7</version>
+						<version>0.8.7-ATP</version>
 					</tagletArtifact>
 				</configuration>
 			</plugin>
@@ -455,7 +455,7 @@
 					<plugin>
 						<groupId>org.odftoolkit</groupId>
 						<artifactId>schema2template-maven-plugin</artifactId>
-						<version>0.8.7</version>
+						<version>0.8.7-ATP</version>
 						<executions>
 							<execution>
 								<id>dom</id>
