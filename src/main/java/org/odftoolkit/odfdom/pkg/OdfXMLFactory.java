@@ -123,11 +123,12 @@ public class OdfXMLFactory {
 		c = classCache.get(odfName);
 		if (c == null) {
 			String prefix = odfName.getPrefix();
-			if (prefix != null && !(nodeType.equals(ATTRIBUTE_PACKAGE_NAME) && prefix.equals("xmlns"))) {
+			boolean isAttribute = nodeType.equals(ATTRIBUTE_PACKAGE_NAME);
+			if (prefix != null && !(isAttribute && prefix.equals("xmlns"))) {
 				String qName = odfName.getQName();
 				String localName = odfName.getLocalName();
 				//judge whether the element need to load class from incubator package.
-				if (mIncubatorElements.contains(qName)) {
+				if (mIncubatorElements.contains(qName) && !isAttribute) {
 					//judge whether the element need to rename before find class name.
 					if (mElementRenames.containsKey(qName)) {
 						String renameName = mElementRenames.get(qName);
